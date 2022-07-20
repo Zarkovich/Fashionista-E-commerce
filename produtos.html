@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Produtos</title>
+
+</head>
+<body>
+
+    <h2>Vitrine:</h2>
+    
+    <div id="produtos">
+        
+
+    </div>
+    <h2>Carrinho</h2>
+
+    <div id="carrinho">
+       
+
+    </div>
+
+    <script>
+        const itens = [
+            {
+                id:0,
+                nome:"bolsa",
+                img: "home1.png",
+                quantidade: 0,
+            },
+            {
+                id:1,
+                nome:"roupas",
+                img: "home1.png",
+                quantidade: 0,
+            },
+            {
+                id:2,
+                nome:"oculos",
+                img: "home1.png",
+                quantidade: 0,
+            },
+        ]
+
+        inicializarLoja = () => {
+            const containerProdutos = document.getElementById('produtos');
+            itens.map((val)=>{
+               containerProdutos.innerHTML += `
+               
+               <div class="produto-single">
+                    <img src = "`+val.img+`"/>
+                    <p>`+val.nome+`</p>
+                    <a key="`+val.id+`" href="#">Adicionar ao carrinho!</a>
+               
+               
+               </div> 
+               
+               `;
+            })
+        }
+
+        inicializarLoja();
+
+        AtulizarCarrinho = () => {
+            const containerCarrinho = document.getElementById('carrinho');
+            containerCarrinho.innerHTML = "";
+            itens.map((val)=>{
+                if(val.quantidade > 0){
+               containerCarrinho.innerHTML +=`
+               
+               <p>`+val.nome+` | quantidade: `+val.quantidade+`</p>
+               <hr>
+
+               
+               
+               `;
+               
+               
+                }
+            });
+        }
+
+
+        
+
+        const links = document.getElementsByTagName('a');
+
+        for(let i = 0; i< links.length; i++){
+            links[i].addEventListener("click", function(){
+                let key = this.getAttribute('key');
+                itens[key].quantidade++;
+                AtulizarCarrinho();
+                return false;
+            })
+        }
+
+
+    </script>
+    
+</body>
+</html>
