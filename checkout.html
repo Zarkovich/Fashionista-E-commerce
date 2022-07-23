@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="checkout.css" />
+    <script
+      src="https://kit.fontawesome.com/f9e19193d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Fashionista - Checkout</title>
+  </head>
+  <body>
+    <div id="pedido">
+      <span><h1>Seu pedido</h1></span>
+      <span><a href="#">Voltar para o carrinho</a></span>
+      <table cellspacing="0" cellpadding="0">
+        <thead>
+          <th></th>
+          <th>Produto</th>
+          <th>Atributos</th>
+          <th class="produto_head_preço">Preço Unit.</th>
+          <th class="produto_head_preço">Total</th>
+        </thead>
+        <tbody>
+          <tr id="produtos_body">
+            <td class="produto_img">
+              <img src="./img/prod1.png" alt="Kit Amortecedor Teste - Virtual">
+              <div class="produto_img_qt">
+                5x
+              </div>
+            </td>
+            <td>
+              <p class="produto_nome">Kit Amortecedor Teste - Virtual</p>
+              <p class="produto_ref">Referência 04357</p>
+            </td>
+            <td></td>
+            <td><p class="produto_preco"><span class="dashed">R$ 3.000,00</span><span>R$ 180,00</span></p></td>
+            <td><p class="produto_preco"><span>R$ 900,00</span></p></td>
+          </tr>
+          <tr id="produtos_body">
+            <td class="produto_img">
+              <img src="./img/prod2.png" alt="Celular">
+              <div class="produto_img_qt">
+                5x
+              </div>
+            </td>
+            <td>
+              <p class="produto_nome">Celular</p>
+              <p class="produto_ref">Referência 5675675</p>
+            </td>
+            <td>
+              <p class="produto_atributo">
+                <span>Cor: </span>
+                <span><strong>Medium Brown</strong></span>
+              </p>
+            </td>
+            <td><p class="produto_preco"><span class="dashed">R$ 10.000,00</span><span>R$ 90,00</span></p></td> <!-- O QUE?????? -->
+            <td><p class="produto_preco"><span>R$ 450,00</span></p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="envio">
+      <h1>Você</h1>
+      <div>
+        <p>user@email.com</p>
+        <p><a href="#">Sair e Trocar</a></p>
+      </div>
+      <h1>Destino</h1>
+      <div class="address-carrousel">
+        <div class="address fade">
+          <p>Plataforma Dollyinho</p>
+          <p>Alameda dos Jacarandás, 140</p>
+          <p>São Luiz - Belo Horizonte - MG</p>
+          <p>31275-060</p>
+          <p>Endereço para envio [/]</p>
+        </div>
+        <div class="address fade">
+          <p>Plataforma do seu Amiguinho</p>
+          <p>Alameda dos Jacarandás, 140</p>
+          <p>São Luiz - Belo Horizonte - MG</p>
+          <p>31275-060</p>
+          <p>Endereço para envio [/]</p>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+      <h1>Forma de Envio</h1>
+      <table cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td><input type="radio" name="envio_forma" id="1" /></td>
+            <td><p>Retirada no local</p></td>
+            <td><p>Grátis</p></td>
+            <td><input type="radio" name="envio_frete" id="1" /></td>
+            <td><p>Frete Grátis</p></td>
+            <td><p>Grátis</p></td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="envio_forma" id="2" /></td>
+            <td><p>Motoboy</p></th>
+            <td><p>R$ 15,00</p></td>
+            <td><input type="radio" name="envio_frete" id="2" /></td>
+            <td><p>Retirar próximo ao meu endereço</p><p>Previsão: até 4 dias úteis</p></td>
+            <td><p>R$ 20,70</p></td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="envio_forma" id="3" /></td>
+            <td><p>PAC</p><p>Previsão: até 3 dias úteis</p></th>
+            <td><p>R$ 32,20</p></td>
+            <td><input type="radio" name="envio_frete" id="3" /></td>
+            <td><p>Package</p><p>Previsão: até 4 dias úteis</p></td>
+            <td><p>R$ 39,52</p></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td colspan="6">
+            Prazo de entrega dos Correios é de até 5 dias úteis seguintes ao da postagem.
+          </td>
+        </tfoot>
+      </table>
+      <p>Observações</p>
+      <textarea name="obs" id="obs" cols="30" rows="10"></textarea>
+    </div>
+    <div id="resumo">
+      <h1>Resumo</h1>
+      <table cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td class="row-div"><p class="prices-header">Subtotal</p></td>
+            <td class="row-div"><p class="prices">R$ 1350,00</p></td>
+          </tr>
+          <tr>
+            <td class="row-div"><p class="prices-header">PAC</p></td>
+            <td class="row-div"><p class="prices">+ R$ 32,20</p></td>
+          </tr>
+          <tr>
+            <td><p class="prices-header total-header">Total do Pedido</p></td>
+            <td>
+              <p class="prices total">R$ 1382,20</p>
+              <p class="prices">em até 3X de R$ 460,73</p>
+              <p class="prices">ou 1382,20 no</p>
+              <p class="prices">depósito ou transferência com % de desconto</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="points" colspan="2">
+              <img src="./img/refund.png" /><p>Você ganha 1350 pontos nesta compra. Aproveite!</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><p>Possui cupom de desconto?</p></td>
+          </tr>
+        </tbody>
+      </table>
+      <h1>Como deseja pagar?</h1>
+      <table cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td><input type="radio" name="forma_pagamento" id="1"></td>
+            <td>Boleto</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="forma_pagamento" id="2"></td>
+            <td>Cartão de Crédito</td>
+            <td>à vista</td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="forma_pagamento" id="3"></td>
+            <td>Boleto Bancário</td>
+            <td>em 2X sem juros ou até 3x no cartão.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="rodape">
+      <a href="#"><p>Voltar para o carrinho</p></a>
+    </div>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("address");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>
