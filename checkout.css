@@ -14,6 +14,38 @@ body {
   color: #353535;
   display: grid;
   grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+  grid-area: header;
+  width: 100%;
+  padding: 36px 56px;
+  justify-items: center;
+}
+
+.top_menu {
+  float: right;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 18px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 35px;
+}
+
+.top_menu a {
+  text-decoration: none;
+  color: #353535;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
     "pedido pedido"
     "envio resumo"
     "rodape rodape";
@@ -42,7 +74,7 @@ td {
 
 #pedido table {
   font-size: 10px;
-  width: 95%;
+  width: 98%;
 }
 .produto_head_preço {
   text-align: right;
@@ -234,8 +266,18 @@ td.produto_img img {
   text-decoration: none;
   cursor: pointer;
 }
+footer {
+  grid-area: footer;
+  background-color: #353535;
+  color: #f8f8f8;
+  width: 100%;
+  text-align: center;
+}
+footer p {
+  padding: 35px 0;
+}
 @media (max-width: 600px) {
-  body {
+  main {
     grid-template-areas:
       "pedido"
       "envio"
