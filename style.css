@@ -19,17 +19,17 @@ body {
 }
 
 #checkbox__bag:checked ~ .Sacola__container {
-  width: 0px;
-  overflow-x: hidden;
+  right: -600px;
 }
 
 .Sacola__container {
-  position: absolute;
+  position: fixed;
+  top: 0;
   right: 0;
   width: 30%;
   height: 100%;
   background-color: #f3f3f4;
-  transition: all 1s ease-in-out;
+  transition: right 1s ease-in-out;
 }
 
 .titulo__Sacola {
@@ -71,31 +71,37 @@ body {
 }
 
 .container__produto {
-  width: 525px;
+  padding: 10px;
+  /* width: 525px; */
+  width: 100%;
   display: flex;
-  height: 275px;
+  height: 30%;
+  border-bottom: 2px solid black;
 }
 
 .imagem {
   width: 166px;
-  background-color: darksalmon;
+}
+
+.imagem > img {
+  width: 100%;
 }
 
 .imagem > p {
+  text-align: center;
   color: red;
   cursor: pointer;
 }
 
 .informacoes {
-  padding: 25px;
   width: 100%;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   row-gap: 50px;
 }
 
 .Nome__preco {
-  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -112,18 +118,24 @@ body {
 }
 
 .contador__produtos > span {
-  height: 40px;
-  width: 40px;
+  height: 2.5rem;
+  width: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid black;
   background-color: white;
-  font-size: 38px;
+  font-size: 2rem;
   cursor: pointer;
   user-select: none;
   transition: background 0.2s ease;
 }
 .contador__produtos > span:hover {
   background-color: #899f8c;
+}
+
+@media screen and (max-width: 960px) {
+  .Sacola__container {
+    width: 100%;
+  }
 }
