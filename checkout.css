@@ -52,6 +52,10 @@ main {
   margin: 2rem;
 }
 
+h1 {
+  margin: 30px 0;
+}
+
 td {
   padding: 4px;
   border: none;
@@ -256,6 +260,34 @@ td.produto_img img {
   display: inline-block;
 }
 
+#desconto {
+  text-align: right;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#desconto i {
+  padding: 3px 4px;
+  border: #666 2px solid;
+  border-radius: 50%;
+  color: #666;
+}
+
+.forma_pagamento_titulo {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.forma_pagamento_desc {
+  font-size: 10px;
+  color: #747474;
+}
+.forma_pagamento_img {
+  width: 20px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 10px;
+}
 #rodape {
   grid-area: rodape;
 }

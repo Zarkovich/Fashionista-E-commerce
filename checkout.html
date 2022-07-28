@@ -164,7 +164,7 @@
             </td>
           </tr>
           <tr>
-            <td colspan="2"><p>Possui cupom de desconto?</p></td>
+            <td colspan="2"><p id="desconto"><i class="fa-solid fa-percent"></i> Possui cupom de desconto?</p></td>
           </tr>
         </tbody>
       </table>
@@ -173,18 +173,33 @@
         <tbody>
           <tr>
             <td><input type="radio" name="forma_pagamento" id="1"></td>
-            <td>Boleto</td>
-            <td></td>
+            <td><i class="fa-solid fa-qrcode"></i></i></td>
+            <td><p class="forma_pagamento_titulo">Pix</p></td>
+            <td><p class="forma_pagamento_desc"></p></td>
           </tr>
           <tr>
             <td><input type="radio" name="forma_pagamento" id="2"></td>
-            <td>Cartão de Crédito</td>
-            <td>à vista</td>
+            <td><i class="fa-solid fa-barcode"></i></td>
+            <td><p class="forma_pagamento_titulo">Boleto</p></td>
+            <td><p class="forma_pagamento_desc">à vista</p></td>
           </tr>
           <tr>
             <td><input type="radio" name="forma_pagamento" id="3"></td>
-            <td>Boleto Bancário</td>
-            <td>em 2X sem juros ou até 3x no cartão.</td>
+            <td><i class="fa-solid fa-credit-card"></i></td>
+            <td><p class="forma_pagamento_titulo">Cartão de Crédito</p></td>
+            <td><p class="forma_pagamento_desc">em 2X sem juros ou até 3x no cartão.</p></td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="forma_pagamento" id="4"></td>
+            <td><i class="fa-solid fa-money-bill-transfer"></i></td>
+            <td><p class="forma_pagamento_titulo">Depósito Bancário</p></td>
+            <td>
+              <img class="forma_pagamento_img" src="./img/bb.png" alt="Banco do Brasil"/>
+              <img class="forma_pagamento_img" src="./img/bradesco.png" alt="Bradesco"/>
+              <img class="forma_pagamento_img" src="./img/caixa.png" alt="Caixa Econômica Federal"/>
+              <img class="forma_pagamento_img" src="./img/itau.png" alt="Itaú"/>
+              <img class="forma_pagamento_img" src="./img/sicoob.png" alt="SICOOB"/>
+            </td>
           </tr>
         </tbody>
       </table>
