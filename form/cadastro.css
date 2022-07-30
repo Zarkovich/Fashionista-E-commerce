@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Saira", sans-serif;
+}
+
+body {
+  margin: auto;
+  background: #f5f5f5;
+  width: 100%;
+  height: 100vh;
+  max-width: 1200px;
+  box-shadow: 5px 5px 10px rgba(100, 100, 100, 0.479),
+    -5px -5px 10px rgba(100, 100, 100, 0.479);
+  border: 1px solid rgb(100, 100, 100);
+}
+
+a,
+ul,
+li,
+label {
+  text-decoration: none; /*tirar o sublinhado dos links*/
+  list-style: none; /*tirar as marcações da lista no nav*/
+  cursor: pointer;
+}
+
+/* HEADER */
+#header {
+  background: #ffffff;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #000000;
+  display: flex;
+  justify-content: space-between; /*Espaço entre as linhas, no caso vai deixar o <a> logo distante do <nav>*/
+  align-items: center; /*alinhando os itens "logo" e "navegação" para o centro do header*/
+}
+
+#header > a > img {
+  height: 50px;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 30px; /* Espaçamento entre os icones de 30px para esquerda*/
+}
+
+/* SEÇÃO DO FORMULÁRIO */
+#section1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+#section1 div {
+  padding: 5px;
+  max-width: 100%;
+}
+
+#section1 hr {
+  width: 100%;
+  margin: auto;
+}
+
+/* FORMULÁRIO DADOS PESSOAIS */
+.divform1 {
+  background: white;
+  margin-top: 144px;
+  margin-right: 67px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  width: 615px;
+}
+
+.form1 {
+  margin: 30px 0 30px 30px;
+  text-align: center;
+}
+
+.form1 > div {
+  margin-top: 10px;
+}
+
+.form1 input {
+  background: #f5f5f5;
+  border: 1px solid #899f8c;
+}
+
+.container_input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container_input > input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+  background: transparent;
+  width: 80%;
+}
+
+.genero {
+  text-align: left;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+  accent-color: #899f8c;
+  height: 15px;
+  width: 15px;
+}
+
+.genero > label {
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+/* FORMULÁRIO ENDEREÇO */
+.divform2 {
+  background: white;
+  margin-top: 144px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  width: 663px;
+}
+
+.form2 {
+  margin: 30px 0 30px 30px;
+  text-align: center;
+}
+
+.form2 > div {
+  margin-top: 10px;
+}
+
+.form2 input {
+  background: #f5f5f5;
+  border: 1px solid #899f8c;
+}
+
+.container_input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container_input > input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+  background: transparent;
+  width: 90%;
+}
+
+/* SEÇÃO DO BOTÃO */
+
+.botao {
+  margin-left: 90%;
+  margin-top: 30px;
+  right: 15%;
+}
+
+.botao input {
+  width: 107px;
+  height: 43px;
+  font-weight: bold;
+  color: black;
+  background-color: #899f8c;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.botao input:hover {
+  background-color: #ccc;
+}
+
+#checkbox__bag {
+  display: none;
+}
+
+#checkbox__bag:checked ~ .Sacola__container {
+  right: -600px;
+}
+
+.Sacola__container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background-color: #f3f3f4;
+  transition: right 1s ease-in-out;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+}
+
+.titulo__Sacola {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  column-gap: 40%;
+  display: flex;
+  height: 87px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(122, 122, 122, 0.521);
+}
+
+.titulo__Sacola > div:last-child {
+  justify-self: flex-start;
+  align-self: center;
+}
+
+.voltar__button > label {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  row-gap: 7px;
+}
+
+.voltar__button > label > span {
+  display: block;
+  width: 12px;
+  height: 0;
+  border: 0.5px solid black;
+}
+
+.voltar__button > label > span:first-child {
+  transform: rotate(-45deg);
+}
+
+.voltar__button > label > span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.titulo {
+  font-family: "Saira", sans-serif;
+  font-weight: 400;
+}
+
+.container__produto {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  height: 30%;
+  min-height: 250px;
+  border-bottom: 2px solid black;
+}
+
+.imagem {
+  max-width: 166px;
+  width: 100%;
+  height: 100%;
+}
+
+.imagem > img {
+  width: 100%;
+  height: 90%;
+}
+
+.imagem > p {
+  text-align: center;
+  color: red;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.informacoes {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Nome__preco {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Tamanho__parcela {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contador__produtos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contador__produtos > button {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.contador__produtos > button:hover {
+  background-color: #899f8c;
+}
+
+@media screen and (max-width: 960px) {
+  #section1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divform1 {
+    margin: 10px 0;
+  }
+
+  .divform2 {
+    margin: 10px 0;
+  }
+
+  .botao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  section > img {
+    align-self: center;
+    width: 60%;
+    height: 60%;
+  }
+
+  .Sacola__container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Produtos</title>
+  </head>
+  <body>
+    <header id="header">
+      <a href="/">
+        <img src="./imgs/logoI 1.png" class="logo" alt="" />
+        <img src="./imgs/hoshi 1.png" alt="" />
+      </a>
+      <!-- NAVBAR-->
+      <nav id="nav">
+        <ul class="menu">
+          <li>
+            <a href="#"><img src="./imgs/lupa-arredondada 1.png" alt="" /></a>
+          </li>
+          <li>
+            <label for="checkbox__bag"
+              ><img src="./imgs/bolsa-de-compras 1.png" alt=""
+            /></label>
+          </li>
+          <li>
+            <a href="#"><img src="./imgs/user 1.png" alt="" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="Bag__produtos">
+      <input type="checkbox" id="checkbox__bag" checked />
+      <div class="Sacola__container">
+        <div class="titulo__Sacola">
+          <div class="voltar__button">
+            <label for="checkbox__bag">
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+          <div>
+            <h1 class="titulo">Sacola (3)</h1>
+          </div>
+        </div>
+        <div class="container__produto">
+          <div class="imagem">
+            <img src="./foto 1.png" alt="imagem" />
+            <p>Remover Item</p>
+          </div>
+          <div class="informacoes">
+            <div class="Nome__preco">
+              <h2>Nome Produto</h2>
+              <h2>R$ 49,90</h2>
+            </div>
+            <div class="Tamanho__parcela">
+              <p>TAMANHO G</p>
+              <p>2x de R$ 25,00</p>
+            </div>
+            <div class="contador__produtos">
+              <button>-</button>
+              <h2>1</h2>
+              <button>+</button>
+            </div>
+          </div>
+        </div>
+        <button class="Finalizar__Button">
+          <a href="../checkout/checkout.html"> Finalizar Compra </a>
+        </button>
+      </div>
+    </div>
+    <section>
+      <img src="./foto 1.png" alt="" />
+      <div class="Description">
+        <h1>BLUSA UNIVERSO</h1>
+        <div class="valor__parcelas">
+          <p>R$ 199,90</p>
+          <p>em até 3x R$ 66,63</p>
+        </div>
+        <div class="Tamanhos">
+          <p>Escolha o tamanho</p>
+          <button>P</button>
+          <button>M</button>
+          <button>G</button>
+        </div>
+        <button>Adicionar à Sacola</button>
+      </div>
+    </section>
+  </body>
+</html>

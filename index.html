@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>hoshi</title>
+  </head>
+  <body>
+    <header>
+      <div id="cabecalho">
+        <div>
+          <img class="logo" src="./imagens/logoI.png" alt="logo" />
+          <img class="logo" src="./imagens/hoshi.png" alt="hoshi" />
+        </div>
+        <div>
+          <img class="icon" src="./imagens/lupa.png" alt="lupa" />
+          <label for="checkbox__bag">
+            <img class="icon" src="./imagens/sacola.png" alt="sacola" />
+          </label>
+          <a href="./form/cadastro.html">
+            <img class="icon" src="./imagens/user.png" alt="user" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="Bag__produtos">
+      <input type="checkbox" id="checkbox__bag" checked />
+
+      <div class="Sacola__container">
+        <div class="titulo__Sacola">
+          <div class="voltar__button">
+            <label for="checkbox__bag">
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+          <div>
+            <h1 class="titulo">Sacola (3)</h1>
+          </div>
+        </div>
+        <div class="container__produto">
+          <div class="imagem">
+            <img src="./imagens/foto 1.png" alt="imagem" />
+            <p>Remover Item</p>
+          </div>
+          <div class="informacoes">
+            <div class="Nome__preco">
+              <h2>Nome Produto</h2>
+              <h2>R$ 49,90</h2>
+            </div>
+            <div class="Tamanho__parcela">
+              <p>TAMANHO G</p>
+              <p>2x de R$ 25,00</p>
+            </div>
+            <div class="contador__produtos">
+              <button>-</button>
+              <h2>1</h2>
+              <button>+</button>
+            </div>
+          </div>
+        </div>
+        <button class="Finalizar__Button">
+          <a href="../checkout/checkout.html"> Finalizar Compra </a>
+        </button>
+      </div>
+    </div>
+
+    <main>
+      <div class="areaprodutos">
+        <ul class="listaprodutos">
+          <li class="produtos">
+            <div class="imagem" href="../Produto/produtos.html">
+              <a href="../Produto/produtos.html">
+                <img src="./imagens/foto 1.png" alt="produto 1" />
+              </a>
+              <h3>Camisa espacial</h3>
+              <p>R$ 59,90</p>
+            </div>
+          </li>
+          <li class="produtos">
+            <div class="imagem" onclick="">
+              <img src="./imagens/roupa 12.png" alt="produto 2" />
+              <h3>Vestido estrelas</h3>
+              <p>R$ 79,90</p>
+            </div>
+          </li>
+          <li class="produtos">
+            <div class="imagem">
+              <img src="./imagens/roupa 3.png" alt="produto 3" />
+              <h3>Camisa luas</h3>
+              <p>R$ 29,90</p>
+            </div>
+          </li>
+          <li class="produtos">
+            <div class="imagem">
+              <img src="./imagens/roupa 4.png" alt="produto 4" />
+              <h3>Cropped espaço</h3>
+              <p>R$ 39,90</p>
+            </div>
+          </li>
+          <li class="produtos">
+            <div class="imagem">
+              <img src="./imagens/roupa 5.png" alt="produto 5" />
+              <h3>Camiseta luas</h3>
+              <p>R$ 99,90</p>
+            </div>
+          </li>
+          <li class="produtos">
+            <div class="imagem">
+              <img src="./imagens/roupa 6.png" alt="produto 6" />
+              <h3>Vestido constelação</h3>
+              <p>R$ 89,90</p>
+            </div>
+          </li>
+          <li class="produtos">
+            <div class="imagem">
+              <img src="./imagens/roupa 7.png" alt="produto 7" />
+              <h3>Regata estrelas</h3>
+              <p>R$ 59,90</p>
+            </div>
+          </li>
+          <li class="produtos">
+            <div class="imagem">
+              <img src="./imagens/roupa 8.png" alt="produto 8" />
+              <h3>Camisa espaço</h3>
+              <p>R$ 59,90</p>
+            </div>
+          </li>
+          <li class="produtos">
+            <div class="imagem">
+              <img src="./imagens/roupa 9.png" alt="produto 9" />
+              <h3>Blusa estrelas</h3>
+              <p>R$ 59,90</p>
+            </div>
+          </li>
+          <li class="produtos">
+            <div class="imagem">
+              <img src="./imagens/roupa 14.png" alt="produto 10" />
+              <h3>Vestido estrelado</h3>
+              <p>R$ 99,90</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <h6>@byMichelle</h6>
+    </footer>
+  </body>
+</html>
