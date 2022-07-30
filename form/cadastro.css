@@ -248,7 +248,7 @@ input[type="radio"] {
 
 .titulo {
   font-family: "Saira", sans-serif;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .container__produto {
@@ -362,9 +362,5 @@ input[type="radio"] {
 
   .Sacola__container {
     width: 100%;
-  }
-
-  .imagem > p {
-    font-size: 0.8rem;
   }
 }
