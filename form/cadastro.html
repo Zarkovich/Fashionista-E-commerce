@@ -1,79 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro</title>
-    <link rel="stylesheet" href="cadastro.css">
-    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100&display=swap" rel="stylesheet">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="cadastro.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- HEADER -->
     <header id="header">
-        <a href="/"><img src="./imgs/logoI 1.png" class="logo" alt="">
-            <img src="./imgs/hoshi 1.png" alt="">
-        </a>
-         <!-- NAVBAR-->
-        <nav id="nav">
-            <ul class="menu">
-                <li><a href="/"><img src="./imgs/lupa-arredondada 1.png" alt=""></a></li>
-                <li><a href="/"><img src="./imgs/bolsa-de-compras 1.png" alt=""></a></li>
-                <li><a href="/"><img src="./imgs/user 1.png" alt=""></a></li>
-            </ul>  
-        </nav>
-    </header>  
+      <a href="/">
+        <img src="./imgs/logoI 1.png" class="logo" alt="" />
+        <img src="./imgs/hoshi 1.png" alt="" />
+      </a>
+      <!-- NAVBAR-->
+      <nav id="nav">
+        <ul class="menu">
+          <li>
+            <a href="/"><img src="./imgs/lupa-arredondada 1.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="/"><img src="./imgs/bolsa-de-compras 1.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="/"><img src="./imgs/user 1.png" alt="" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-     <!-- SEÇÃO DE FORMULÁRIO -->
+    <!-- SEÇÃO DE FORMULÁRIO -->
     <section id="section1">
+      <!-- FORMULÁRIO DE DADOS PESSOAIS-->
+      <div class="divform1">
+        <h2>Dados Pessoais</h2>
+        <hr />
+        <form action="#" class="form1">
+          <div class="container_input">
+            <label for="nome">Nome completo</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Nome "
+              required
+            />
+          </div>
 
-         <!-- FORMULÁRIO DE DADOS PESSOAIS-->
-        <div class="divform1">
-            <h2>Dados Pessoais</h2>
-            <hr>
-            <form action="#" class="form1">
+          <div class="container_input">
+            <label for="cpf">CPF</label>
+            <input
+              type="tel"
+              id="cpf"
+              name="cpf"
+              placeholder="000.000.000-00"
+              required
+              maxlength="14"
+              onkeyup="mascara_cpf()"
+            />
+          </div>
 
-                <div class="container_input">
-                    <label for="nome">Nome completo</label>
-                    <input type="text" id="nome" name="nome" placeholder="Nome " required>
-                </div>
+          <div class="container_input">
+            <label for="datanascimento">Data de Nascimento</label>
+            <input
+              type="date"
+              id="datanascimento"
+              name="datanascimento"
+              required
+            />
+          </div>
 
-                <div class="container_input">
-                    <label for="cpf">CPF</label>
-                    <input type="tel" id="cpf" name="cpf" placeholder="000.000.000-00" required maxlength="14" onkeyup="mascara_cpf()">
-                </div>
+          <div class="container_input">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Digite seu e-mail"
+              required
+            />
+          </div>
 
-                <div class="container_input">
-                    <label for="datanascimento">Data de Nascimento</label>
-                    <input type="date" id="datanascimento" name="datanascimento" required>
-                </div>
+          <div class="container_input">
+            <label for="senha">Senha</label>
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="XXXXXX"
+              required
+            />
+          </div>
 
-                <div class="container_input">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-                </div>
+          <div class="container_input">
+            <label for="celular">Celular</label>
+            <input
+              type="number"
+              id="celular"
+              name="celular"
+              placeholder="(xx) xxxx-xxxx"
+              required
+            />
+          </div>
 
-                <div class="container_input">
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha" name="senha" placeholder="XXXXXX" required>
-                </div>
-                
-                <div class="container_input">
-                    <label for="celular">Celular</label>
-                    <input type="number" id="celular" name="celular" placeholder="(xx) xxxx-xxxx" required>
-                </div> 
-                
-                <div class="genero">
-                    <p>Gênero:</p>
-                    <input type="radio" id="genero" name="genero" value="Masculino">
-                    <label for="genero">Masculino</label>
-                    <input type="radio" id="genero" name="genero" value="Feminino">
-                    <label for="genero">Feminino</label>
-                    <input type="radio" id="genero" name="genero" value="Outro">
-                    <label for="genero">Outro</label>
-                </div>                
-                <!-- <div class="container_input">                    
+          <div class="genero">
+            <p>Gênero:</p>
+            <input type="radio" id="genero" name="genero" value="Masculino" />
+            <label for="genero">Masculino</label>
+            <input type="radio" id="genero" name="genero" value="Feminino" />
+            <label for="genero">Feminino</label>
+            <input type="radio" id="genero" name="genero" value="Outro" />
+            <label for="genero">Outro</label>
+          </div>
+          <!-- <div class="container_input">                    
                         <label for="genero">Gênero:</label>
                         <select name="genero" id="genero">
                             <option value="Masculino">Masculino</option>
@@ -81,63 +125,100 @@
                             <option value="Outro">Outro</option>
                         </select>                    
                 </div>    -->
-            </form>
-        </div>
+        </form>
+      </div>
 
-         <!-- FORMULÁRIO DE ENDEREÇO -->
-        <div class="divform2">
-            <h2>Endereço</h2>
-            <hr>            
-            <form action="#" class="form2">
-                
-                <div class="container_input">
-                    <label for="cep">CEP</label>
-                    <input type="tel" id="cep" name="cep" placeholder="00000-000" required maxlength="8">
-                </div>
+      <!-- FORMULÁRIO DE ENDEREÇO -->
+      <div class="divform2">
+        <h2>Endereço</h2>
+        <hr />
+        <form action="#" class="form2">
+          <div class="container_input">
+            <label for="cep">CEP</label>
+            <input
+              type="tel"
+              id="cep"
+              name="cep"
+              placeholder="00000-000"
+              required
+              maxlength="8"
+            />
+          </div>
 
-                <div class="container_input">
-                    <label for="endereco">Endereço</label>
-                    <input type="text" id="endereco" name="endereco" placeholder="Rua, avenida" required>
-                </div>
+          <div class="container_input">
+            <label for="endereco">Endereço</label>
+            <input
+              type="text"
+              id="endereco"
+              name="endereco"
+              placeholder="Rua, avenida"
+              required
+            />
+          </div>
 
-                <div class="container_input">
-                    <label for="complemento">Complemento</label>
-                    <input type="text" id="complemento" name="complemento" placeholder="Casa, apartamento" required>
-                </div>
+          <div class="container_input">
+            <label for="complemento">Complemento</label>
+            <input
+              type="text"
+              id="complemento"
+              name="complemento"
+              placeholder="Casa, apartamento"
+              required
+            />
+          </div>
 
-                <div class="container_input">
-                    <label for="referencia">Referência</label>
-                    <input type="text" id="referencia" name="referencia" placeholder="Lugar de referência" required>
-                </div>
+          <div class="container_input">
+            <label for="referencia">Referência</label>
+            <input
+              type="text"
+              id="referencia"
+              name="referencia"
+              placeholder="Lugar de referência"
+              required
+            />
+          </div>
 
-                <div class="container_input">
-                    <label for="bairro">Bairro</label>
-                    <input type="text" id="bairro" name="bairro" placeholder="Bairro" required>
-                </div>
+          <div class="container_input">
+            <label for="bairro">Bairro</label>
+            <input
+              type="text"
+              id="bairro"
+              name="bairro"
+              placeholder="Bairro"
+              required
+            />
+          </div>
 
-                <div class="container_input">
-                    <label for="cidade">Cidade</label>
-                    <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
-                </div>
+          <div class="container_input">
+            <label for="cidade">Cidade</label>
+            <input
+              type="text"
+              id="cidade"
+              name="cidade"
+              placeholder="Cidade"
+              required
+            />
+          </div>
 
-                <div class="container_input">
-                    <label for="estado">Estado</label>
-                    <input type="text" id="estado" name="estado" placeholder="Estado" required>
-                </div>
-            </form>            
-        </div>         
+          <div class="container_input">
+            <label for="estado">Estado</label>
+            <input
+              type="text"
+              id="estado"
+              name="estado"
+              placeholder="Estado"
+              required
+            />
+          </div>
+        </form>
+      </div>
     </section>
+    <!-- BOTÃO -->
+    <div class="botao">
+      <input type="submit" value="Enviar" />
+    </div>
 
-        <!-- BOTÃO -->
-        <div class="botao">
-            <input type="submit" value="Enviar">                     
-        </div>
-    
-
-     <!-- RODAPÉ -->
-    <footer id="footer">
-
-    </footer>
-
-</body>
+    <!-- RODAPÉ -->
+    <footer id="footer"></footer>
+  </body>
 </html>
