@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;    
+    font-family: 'Saira', sans-serif;    
+}
+
+body{
+    background: #F5F5F5;
+}
+a, ul, li{
+    text-decoration: none; /*tirar o sublinhado dos links*/
+    list-style: none; /*tirar as marcações da lista no nav*/
+}
+
+/* HEADER */
+#header{
+    background: #FFFFFF;
+    width: 100%;
+    height: 90px;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: space-between; /*Espaço entre as linhas, no caso vai deixar o <a> logo distante do <nav>*/
+    align-items: center; /*alinhando os itens "logo" e "navegação" para o centro do header*/    
+}
+
+/* MENU */
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 30px; /* Espaçamento entre os icones de 30px para esquerda*/
+}
+
+/* SEÇÃO DO FORMULÁRIO */
+#section1{
+    display: flex;
+    justify-content: center;    
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+}
+
+#section1  div{    
+    padding: 5px;    
+    max-width: 100%;   
+}
+
+
+#section1 hr{
+    width: 100%;
+    margin: auto;
+}
+
+/* FORMULÁRIO DADOS PESSOAIS */
+.divform1{       
+    background: white; 
+    margin-top: 144px;
+    margin-right: 67px;
+    border: 1px solid rgba(0,0,0,0.4);
+    box-shadow: 5px 5px #899f8c6b;
+    width: 615px;     
+}
+
+.form1{
+    margin: 30px 0 30px 30px;
+    text-align: center;
+}
+
+.form1 > div{
+    margin-top: 10px;
+}
+
+.form1 input{
+    background:#F5F5F5;
+    border: 1px solid #899F8C;
+       
+}
+
+.container_input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container_input > input{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+    background: transparent;
+    width: 80%;
+}
+
+.genero{
+    text-align: left;   
+
+}
+
+input[type=radio] {
+    cursor: pointer;
+    accent-color: #899F8C;;
+    height: 15px;
+    width: 15px;
+  }
+
+.genero > label{
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+/* FORMULÁRIO ENDEREÇO */
+.divform2{
+    background: white; 
+    margin-top: 144px;
+    border: 1px solid rgba(0,0,0,0.4);
+    box-shadow: 5px 5px #899f8c6b;
+    width: 663px;     
+}
+
+.form2{
+    margin: 30px 0 30px 30px;
+    text-align: center;
+}
+
+.form2 > div{
+    margin-top: 10px;
+}
+
+.form2 input{
+    background:#F5F5F5;
+    border: 1px solid #899F8C;       
+}
+
+.container_input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container_input > input{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+    background: transparent;
+    width: 90%;
+}
+
+/* SEÇÃO DO BOTÃO */
+
+.botao{
+    margin-top: 30px;
+    right: 15%;
+    position: absolute;   
+}
+
+.botao input{
+    width: 107px;
+    height: 43px;
+    font-weight: bold;
+    color: black;
+    background-color: #899F8C;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
