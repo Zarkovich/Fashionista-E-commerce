@@ -312,6 +312,29 @@ input[type="radio"] {
   background-color: #899f8c;
 }
 
+.Finalizar__Button {
+  float: right;
+  margin: 10px 10px;
+  padding: 10px;
+  background-color: #899f8c;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.Finalizar__Button > a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.Finalizar__Button:hover {
+  background-color: #ccc;
+}
+
 @media screen and (max-width: 960px) {
   #section1 {
     flex-direction: column;
