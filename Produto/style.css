@@ -33,8 +33,13 @@ header {
   align-items: center; /*alinhando os itens "logo" e "navegação" para o centro do header*/
 }
 
+header > a {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 header > a > img {
-  height: 50px;
+  height: 2.5rem;
 }
 
 .menu {
@@ -43,6 +48,10 @@ header > a > img {
 
 .menu li {
   margin-left: 30px; /* Espaçamento entre os icones de 30px para esquerda*/
+}
+
+.menu img {
+  width: 1.5rem;
 }
 
 section {

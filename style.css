@@ -231,19 +231,18 @@ header {
     column-gap: 25px;
   }
 
+  section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  section > img {
+    align-self: center;
+    width: 60%;
+    height: 60%;
+  }
+
   .Sacola__container {
     width: 100%;
-  }
-
-  .Nome__preco {
-    flex-direction: column;
-  }
-
-  .Tamanho__parcela {
-    flex-direction: column;
-  }
-
-  .contador__produtos {
-    margin: 10px 0;
   }
 }

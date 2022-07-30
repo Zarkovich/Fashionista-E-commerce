@@ -36,8 +36,13 @@ label {
   align-items: center; /*alinhando os itens "logo" e "navegação" para o centro do header*/
 }
 
+#header > a {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 #header > a > img {
-  height: 50px;
+  height: 2rem;
 }
 
 /* MENU */
@@ -338,7 +343,7 @@ input[type="radio"] {
 @media screen and (max-width: 960px) {
   #section1 {
     flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
   }
 
   .divform1 {
@@ -350,24 +355,16 @@ input[type="radio"] {
   }
 
   .botao {
+    margin: 0;
     display: flex;
-    width: 100%;
     justify-content: center;
-    margin-bottom: 100px;
-  }
-
-  section {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  section > img {
-    align-self: center;
-    width: 60%;
-    height: 60%;
   }
 
   .Sacola__container {
     width: 100%;
+  }
+
+  .imagem > p {
+    font-size: 0.8rem;
   }
 }
