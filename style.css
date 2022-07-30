@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Saira", sans-serif;
+}
+
+body {
+  margin: auto;
+  max-width: 1200px;
+  background-color: #f5f5f5;
+}
+
+header {
+  display: flex;
+  height: 75px;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+#cabecalho {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#cabecalho > div {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+#cabecalho > div:first-child > img:first-child {
+  width: 4rem;
+}
+#cabecalho > div:first-child > img:last-child {
+  width: 8rem;
+}
+
+#cabecalho > div:last-child .icon {
+  width: 2rem;
+}
+
+#cabecalho > div:last-child > label {
+  cursor: pointer;
+}
+
+.listaprodutos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
+  column-gap: 25px;
+  row-gap: 25px;
+  margin-top: 20px;
+}
+
+.listaprodutos > * > * img {
+  height: 100%;
+  width: 100%;
+  box-shadow: 5px 5px 30px rgba(110, 110, 110, 0.377);
+}
+
+.checkbox__bag {
+  cursor: pointer;
+}
+
+#checkbox__bag {
+  display: none;
+}
+
+#checkbox__bag:checked ~ .Sacola__container {
+  right: -600px;
+}
+
+.Sacola__container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background-color: #f3f3f4;
+  transition: right 1s ease-in-out;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+}
+
+.titulo__Sacola {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  column-gap: 40%;
+  display: flex;
+  height: 87px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(122, 122, 122, 0.521);
+}
+
+.titulo__Sacola > div:last-child {
+  justify-self: flex-start;
+  align-self: center;
+}
+
+.voltar__button > label {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  row-gap: 7px;
+}
+
+.voltar__button > label > span {
+  display: block;
+  width: 12px;
+  height: 0;
+  border: 0.5px solid black;
+}
+
+.voltar__button > label > span:first-child {
+  transform: rotate(-45deg);
+}
+
+.voltar__button > label > span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.titulo {
+  font-family: "Saira", sans-serif;
+  font-weight: 400;
+}
+
+.container__produto {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  height: 30%;
+  min-height: 250px;
+  border-bottom: 2px solid black;
+}
+
+.Bag__produtos .imagem {
+  max-width: 166px;
+  width: 100%;
+  height: 100%;
+}
+
+.Bag__produtos .imagem > img {
+  width: 100%;
+  height: 90%;
+}
+
+.Bag__produtos .imagem > p {
+  text-align: center;
+  color: red;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.informacoes {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Nome__preco {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Tamanho__parcela {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contador__produtos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contador__produtos > button {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.contador__produtos > button:hover {
+  background-color: #899f8c;
+}
+
+.Finalizar__Button {
+  float: right;
+  margin: 10px 10px;
+  padding: 10px;
+  background-color: #899f8c;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.Finalizar__Button > a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.Finalizar__Button:hover {
+  background-color: #ccc;
+}
+
+@media (max-width: 960px) {
+  .listaprodutos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    column-gap: 25px;
+  }
+
+  .Sacola__container {
+    width: 100%;
+  }
+
+  .Nome__preco {
+    flex-direction: column;
+  }
+
+  .Tamanho__parcela {
+    flex-direction: column;
+  }
+
+  .contador__produtos {
+    margin: 10px 0;
+  }
+}
